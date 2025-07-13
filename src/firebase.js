@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCr90DNVCKrkzkaJKfqKWSBA2rV2_NvVkg",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: "gameit-caf44.firebaseapp.com",
   projectId: "gameit-caf44",
   storageBucket: "gameit-caf44.appspot.com", 
