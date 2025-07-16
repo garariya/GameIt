@@ -1,10 +1,9 @@
-// src/App.js
 import React, { useState, useEffect } from 'react';
 import Login from './components/Login';
 import GameCards from './components/GameCard';
 import { auth } from './firebase';
 import { onAuthStateChanged, signOut } from 'firebase/auth';
-import './components/GameCard.css'; // optional if header is here
+import './components/GameCard.css'; 
 
 function App() {
   const [user, setUser] = useState(null);

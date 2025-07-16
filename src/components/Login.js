@@ -1,4 +1,4 @@
-// src/components/Login.js
+
 import React, { useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase";
@@ -11,7 +11,7 @@ const Login = ({ onLogin }) => {
   const handleLogin = async () => {
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      onLogin(); // tells App.js we're logged in
+      onLogin();
     } catch (error) {
       alert("Login failed: " + error.message);
     }
