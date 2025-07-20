@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,7 +5,7 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
+/* Header Styles */
 .header {
   display: flex;
   justify-content: space-between;
@@ -22,7 +21,7 @@
   font-size: 1.8rem;
   font-weight: bold;
   letter-spacing: 2px;
-  color: #facc15; 
+  color: #facc15;
 }
 
 .home-button {
@@ -49,43 +48,53 @@
   margin: 8px 16px;
 }
 
-
+/* Game Grid */
 .game-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 24px;
   padding: 24px;
   background-color: #f3f4f6;
 }
 
-
+/* Game Card */
 .game-card {
   background-color: white;
   border: 1px solid #ddd;
   border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   text-decoration: none;
   color: inherit;
   transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
 }
 
 .game-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
+/* Game Image */
 .game-image {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
   background-color: #e5e7eb;
-  height: 140px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: bold;
-  color: #6b7280;
-  font-size: 1.2rem;
 }
 
+.game-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Game Title */
 .game-title {
   padding: 16px;
   font-size: 1.1rem;

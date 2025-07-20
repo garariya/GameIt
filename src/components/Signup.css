@@ -1,4 +1,4 @@
-.login-container {
+.signup-container {
   height: 100vh;
   
   background-size: cover;
@@ -7,7 +7,7 @@
   align-items: center;
 }
 
-.login-box {
+.signup-box {
   background-color: rgba(255, 255, 255, 0.95);
   padding: 40px;
   border-radius: 12px;
@@ -15,13 +15,13 @@
   text-align: center;
 }
 
-.login-title {
+.signup-title {
   font-size: 1.5rem;
   margin-bottom: 20px;
   font-weight: bold;
 }
 
-.login-input {
+.signup-input {
   display: block;
   width: 100%;
   padding: 0.6rem;
@@ -33,11 +33,11 @@
   background: #f4f4f4;
 }
 
-.login-input:focus {
+.signup-input:focus {
   border: 2px solid #002626;
 }
 
-.login-button {
+.signup-button {
   background-color: #002626;
   color: white;
   border: none;
@@ -48,12 +48,27 @@
   margin-top: 10px;
 }
 
-.login-button:hover {
+.signup-button:hover {
   background-color: #004d4d;
 }
 
-.signup-toggle {
+.toggle-link {
   margin-top: 15px;
   font-size: 0.9rem;
   color: #333;
+}
+
+.toggle-span {
+  color: #002626;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+
+.login-toggle {
+  color: #004d4d;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: underline;
 }

@@ -3,7 +3,26 @@ import './GameCard.css';
 
 const GameCards = () => {
   
-  const games = [];
+  const games = [
+    {
+      id: 1,
+      name: 'Soundpad',
+      url: 'https://soundpad-lemon.vercel.app/',
+      image: <img src="/images/soundpad.png" alt="Soundpad" />
+    },
+    {
+      id: 2,
+      name: 'War Game',
+      url: 'https://aditya-war-game.vercel.app/',
+      image: <img src="/images/wargame.png" alt="War Game" />
+    },
+    {
+      id: 3,
+      name: 'Dice Roll',
+      url: 'https://aditya-dice-roll.vercel.app/',
+      image: <img src="/images/diceroll.png" alt="Dice Roll" />
+    }
+  ];
 
   return (
     <div>

@@ -1,17 +1,16 @@
-
 import React, { useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase";
 import "./Login.css";
 
-const Login = ({ onLogin }) => {
+const Login = ({ onLoginSuccess, toggleToSignup }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   const handleLogin = async () => {
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      onLogin();
+      onLoginSuccess();  
     } catch (error) {
       alert("Login failed: " + error.message);
     }
@@ -36,6 +35,10 @@ const Login = ({ onLogin }) => {
           onChange={(e) => setPassword(e.target.value)}
         /><br />
         <button onClick={handleLogin} className="login-button">Login</button>
+        <p className="toggle-link">
+          Don't have an account?{" "}
+          <span onClick={toggleToSignup} className="toggle-span">Sign up</span>
+        </p>
       </div>
     </div>
   );
